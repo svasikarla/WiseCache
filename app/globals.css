@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    /* Professional deep teal as primary color */
+    --primary: 196 100% 36%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Subtle gray with slight blue tint for secondary */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Warm accent for highlights */
+    --accent: 24 75% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Refined muted colors */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Card and border colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --ring: 196 100% 36%;
+
+    --radius: 0.75rem;
+
+    /* Chart colors */
+    --chart-1: 196 100% 36%;
+    --chart-2: 24 75% 50%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 316 70% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    /* Brighter teal for dark mode */
+    --primary: 196 80% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Darker secondary for dark mode */
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Warmer accent for dark mode */
+    --accent: 24 75% 55%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Refined dark mode muted colors */
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Card and border colors for dark mode */
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+
+    --ring: 196 80% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Enhanced typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium tracking-tight;
+  }
+
+  /* Card enhancements */
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:-translate-y-1;
+  }
+}
+
