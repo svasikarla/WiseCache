@@ -1,31 +1,55 @@
-import type React from "react"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import Dashboard from "@/dashboard"
-import "@/app/globals.css"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import { GuestProvider } from "@/contexts/GuestContext";
+import { SupabaseProvider } from "@/contexts/SupabaseContext";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "WiseCache - Organize Your Digital Content",
-  description: "A modern dashboard for organizing saved articles, blogs, and videos",
-    generator: 'v0.dev'
-}
+export const metadata: Metadata = {
+  title: "WiSECache - Smart Link Management",
+  description: "Save and organize your links with AI-powered summaries and categorization",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Dashboard />
-        </ThemeProvider>
+        <SupabaseProvider>
+          <GuestProvider>
+            {children}
+            <Toaster 
+              position="bottom-right"
+              toastOptions={{
+                duration: 4000,
+                style: {
+                  background: '#333',
+                  color: '#fff',
+                },
+                success: {
+                  duration: 3000,
+                  style: {
+                    background: '#22c55e',
+                  },
+                },
+                error: {
+                  duration: 5000,
+                  style: {
+                    background: '#ef4444',
+                  },
+                },
+              }}
+            />
+          </GuestProvider>
+        </SupabaseProvider>
       </body>
     </html>
-  )
+  );
 }
 
 
