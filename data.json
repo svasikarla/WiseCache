@@ -1,0 +1,31 @@
+[
+  {
+    "id": "f35ae665-2149-4bdb-8bab-4d2500caa843",
+    "url": "https://www.msn.com/en-in/money/news/i-no-longer-think-you-should-learn-to-code-replit-ceo-on-ai-powered-coding-agents/ar-AA1BT0B3?ocid=msedgntp&pc=U531&cvid=5fbcc7258f0a422f993dfd120c88e0a7&ei=35",
+    "title": "MSN",
+    "summary": "Failed to generate summary. Error: 401 You have insufficient permissions for this operation. Missing scopes: model.request. Check that you have the correct role in your organization (Reader, Writer, Owner) and project (Member, Owner), and if you're using a restricted API key, that it has the necessary scopes.",
+    "categories": [
+      "General"
+    ]
+  },
+  {
+    "id": "ea58b4cf-4b08-4910-9cb4-e8146972d85b",
+    "url": "https://www.msn.com/en-in/money/news/i-no-longer-think-you-should-learn-to-code-replit-ceo-on-ai-powered-coding-agents/ar-AA1BT0B3?ocid=msedgntp&pc=U531&cvid=5fbcc7258f0a422f993dfd120c88e0a7&ei=35",
+    "title": "MSN",
+    "summary": "",
+    "categories": [
+      "General"
+    ],
+    "timestamp": "2025-03-30T01:08:50.962Z"
+  },
+  {
+    "id": "7f67c564-5c7e-4b98-8a89-96833b64d64c",
+    "url": "https://www.msn.com/en-in/money/news/i-no-longer-think-you-should-learn-to-code-replit-ceo-on-ai-powered-coding-agents/ar-AA1BT0B3?ocid=msedgntp&pc=U531&cvid=5fbcc7258f0a422f993dfd120c88e0a7&ei=35",
+    "title": "MSN",
+    "summary": "",
+    "categories": [
+      "General"
+    ],
+    "timestamp": "2025-03-30T01:10:36.347Z"
+  }
+]
